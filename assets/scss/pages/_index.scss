@@ -1,0 +1,29 @@
+.navbar{
+    background-color: $color-nav;
+    height: 96px;
+    .navbar-nav__blog{
+        color: $color-blog;
+    }
+
+    .navbar-nav__nosotros, .navbar-nav__horas, .navbar-nav__trabajos, .navbar-nav__contacto{
+        color: $white;
+
+    
+    }
+
+}
+
+
+.header{
+background-image: url("/assets/img/post-image.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+
+h1{
+    color: $white;
+}
+
+}
+
+
+
