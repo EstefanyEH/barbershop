@@ -4,9 +4,84 @@
     font-weight: $Roboto-regular;
 }
 
-h1{
+.header_texto{
     font-family: $font-playfair;
-    font-weight: $Playfair-bold;
-    font-size: 70px;
-    letter-spacing: 3px;
+    font-weight: $Playfair-black;
+    font-style: $playfair-italic;
+    color: $white;
+}
+
+@media (min-width: 320px) and (max-width: 1199.98px) {
+
+
+        .header_texto {
+        font-size: 40px;
+    }
+
+    .titulo{
+        font-size: 20px;
+        text-align: center !important;
+        margin-top: 0;
+
+        &__enlaces{
+            font-size: 16px;
+            text-align: center !important;
+        }
+    }
+
+}            
+
+@media (min-width: 1200px) {
+    .header_texto {
+        font-size: 70px;
+        padding: 70px;
+    }
+
+    .titulo{
+        font-size: 30px;
+
+        &__enlaces{
+            font-size: 20px;
+        }
+    }
+}
+
+p{
+    font-family: $font-roboto;
+    font-weight: $Roboto-light;
+    font-size: 16px;
+    color: $Raisin-black;
+}
+
+.fecha{
+    font-family: $font-playfair;
+    font-weight: $Playfair-regular;
+    font-size: 18px;
+    color: $Raisin-black;
+}
+
+.titulo{
+
+    font-family: $font-playfair;
+    font-weight: $Playfair-black;
+    font-style: $playfair-italic;
+    
+
+
+&__enlaces {
+font-family: $font-roboto;
+font-weight: $Roboto-light;
+color: $Rudy-pink;
+
+}
+
+
+}
+.texto-naomi{
+ font-family: $font-roboto;
+ font-weight: $Roboto-regular;
+ font-size: 14px;
+ color: $Raisin-black;
+ padding-top: 95px;
+ line-height: 2.3;
 }

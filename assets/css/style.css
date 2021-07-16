@@ -1,22 +1,95 @@
 @charset "UTF-8";
 /*abstracts*/
-@import url("https://fonts.googleapis.com/css2? family = Roboto: wght @ 300; 400 & display = swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,900&display=swap");
 /*base*/
 .nav-item {
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
 }
 
-h1 {
+.header_texto {
   font-family: "Playfair Display", serif;
   font-weight: 900;
-  font-size: 70px;
-  letter-spacing: 3px;
+  font-style: italic;
+  color: #ffffff;
+}
+
+@media (min-width: 320px) and (max-width: 1199.98px) {
+  .header_texto {
+    font-size: 40px;
+  }
+
+  .titulo {
+    font-size: 20px;
+    text-align: center !important;
+    margin-top: 0;
+  }
+  .titulo__enlaces {
+    font-size: 16px;
+    text-align: center !important;
+  }
+}
+@media (min-width: 1200px) {
+  .header_texto {
+    font-size: 70px;
+    padding: 70px;
+  }
+
+  .titulo {
+    font-size: 30px;
+  }
+  .titulo__enlaces {
+    font-size: 20px;
+  }
+}
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #222323;
+}
+
+.fecha {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #222323;
+}
+
+.titulo {
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-style: italic;
+}
+.titulo__enlaces {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #d76c69;
+}
+
+.texto-naomi {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #222323;
+  padding-top: 95px;
+  line-height: 2.3;
 }
 
 /*components*/
+.boton {
+  border-radius: 40px;
+  background-color: #6c6e70;
+  padding: 5px 10px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+  color: #ffffff;
+  border: 2px solid #6c6e70;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
 /*layout*/
 /*pages*/
 .navbar {
@@ -24,19 +97,47 @@ h1 {
   height: 96px;
 }
 .navbar .navbar-nav__blog {
-  color: #DE8684;
+  color: #DE8684 !important;
 }
 .navbar .navbar-nav__nosotros, .navbar .navbar-nav__horas, .navbar .navbar-nav__trabajos, .navbar .navbar-nav__contacto {
   color: #ffffff;
 }
 
+.iconos {
+  filter: invert(1);
+}
+
+@media (min-width: 320px) and (max-width: 1199.98px) {
+  .iconos {
+    height: 25px;
+    width: 25px;
+    margin-top: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .iconos {
+    height: 60px;
+    width: 60px;
+  }
+}
 .header {
   background-image: url("/assets/img/post-image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 3.18rem 3.15rem;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-.header h1 {
-  color: #ffffff;
+
+.container-button {
+  background-color: #e6e7e7;
+}
+
+footer {
+  background-color: #121619;
 }
 
 /*themes*/

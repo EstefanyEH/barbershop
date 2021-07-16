@@ -1,8 +1,8 @@
 .navbar{
-    background-color: $color-nav;
+    background-color: $eerie-black;
     height: 96px;
     .navbar-nav__blog{
-        color: $color-blog;
+        color: $color-blog !important;
     }
 
     .navbar-nav__nosotros, .navbar-nav__horas, .navbar-nav__trabajos, .navbar-nav__contacto{
@@ -13,17 +13,44 @@
 
 }
 
+.iconos{
+    filter: invert(1);
+}
+
+@media (min-width: 320px) and (max-width: 1199.98px){
+    .iconos {
+        height: 25px;
+        width: 25px;
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .iconos {
+        height: 60px;
+        width: 60px;
+    }
+}
 
 .header{
 background-image: url("/assets/img/post-image.jpg");
 background-repeat: no-repeat;
 background-size: cover;
-
-h1{
-    color: $white;
+padding: 3.180rem 3.150rem;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
 }
 
+
+.container-button{
+    background-color: $platinum;
 }
 
 
+footer{
+    background-color: $eerie-black;
+}
 

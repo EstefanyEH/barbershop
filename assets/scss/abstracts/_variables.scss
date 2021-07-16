@@ -1,20 +1,25 @@
 //colores
 
-$color-nav: #121619;
+$eerie-black: #121619;
 $color-blog: #DE8684;
-$Raisin-black: #00222323;
+$Raisin-black-trans: #00222323;
+$Raisin-black: #222323;
 $white: #ffffff;
-
+$Rudy-pink: #d76c69;
+$platinum: #e6e7e7;
+$nickel: #6c6e70;
 
 
 //tipografia
-@import url('https://fonts.googleapis.com/css2? family = Roboto: wght @ 300; 400 & display = swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,900&display=swap');
 
-$font-roboto: Roboto, sans-serif;
+$font-roboto: "Roboto", sans-serif;
 $Roboto-regular: 400;
 $Roboto-light: 300;
 
 $font-playfair: 'Playfair Display', serif;
 $Playfair-regular: 400;
-$Playfair-bold: 900;
+$Playfair-black: 900;
+$playfair-italic: italic;
+
+
+
